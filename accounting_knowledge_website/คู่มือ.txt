@@ -1,0 +1,5 @@
+1. เข้า Folder : frontend / pages / 
+2. เปิด index.html
+3. การเข้าหน้า Admin Panel ให้กด Alt + K
+4. ใส่ Username : admin
+  Password : admin1234

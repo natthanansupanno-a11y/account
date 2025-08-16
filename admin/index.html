@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel | บทความบัญชี</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin-style.css" />
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>จัดการหมวดหมู่</h2>
+      <input type="text" id="categoryInput" placeholder="เพิ่มหมวดหมู่ใหม่" />
+      <button id="addCategoryBtn">เพิ่มหมวดหมู่</button>
+      <ul id="categoryList"></ul>
+    </section>
+
+    <section>
+      <h2>เพิ่มบทความ</h2>
+      <form id="articleForm">
+        <input type="text" id="articleTitle" placeholder="หัวข้อบทความ" required />
+        <select id="articleCategory" required>
+          <option value="">เลือกหมวดหมู่</option>
+        </select>
+        <textarea id="articleContent" placeholder="เนื้อหาบทความ" rows="6" required></textarea>
+
+        <div class="image-upload-controls">
+          <h4>เพิ่มรูปภาพในเนื้อหา</h4>
+          <div class="image-control-group">
+            <input type="text" id="imageUrlInput" placeholder="วางลิงก์รูปภาพ (URL) ที่นี่" />
+            <button type="button" id="addImageUrlBtn">แทรกรูปจากลิงก์</button>
+          </div>
+          <div class="image-control-group">
+            <button type="button" id="triggerImageUploadBtn">อัปโหลดรูปจากเครื่อง</button>
+            <input type="file" id="imageFileInput" accept="image/*" style="display: none;" />
+          </div>
+        </div>
+        <button type="submit">เพิ่มบทความ</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>บทความที่มี</h2>
+      <div id="articleList"></div>
+    </section>
+  </main>
+</body>
+</html>

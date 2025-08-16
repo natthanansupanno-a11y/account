@@ -1,0 +1,131 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  background: #fff0f5;
+  color: #333;
+}
+
+header {
+  background-color: #ec407a;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #4fc3f7;
+  margin-bottom: 1rem;
+  border-left: 5px solid #4fc3f7;
+  padding-left: 0.5rem;
+}
+
+section h3,
+.article-card h3,
+strong {
+  color: #ec407a;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #d81b60;
+}
+
+#articleList .article-item {
+  background: #ffe6ef;
+  padding: 1rem;
+  border-left: 4px solid #ec407a;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+#articleList .article-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #ffeef4;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.image-upload-controls {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  background-color: #fffafd;
+}
+
+.image-upload-controls h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #d81b60;
+  font-weight: bold;
+}
+
+.image-control-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.image-control-group:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.image-control-group input[type="text"] {
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.image-control-group button {
+  white-space: nowrap;
+  background-color: #4fc3f7;
+}
+
+.image-control-group button:hover {
+  background-color: #03a9f4;
+}
